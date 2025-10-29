@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup Form</title>
+<style>
+    body{
+        background-color:aliceblue;
+        height:100vh;
+    }
+    #container{
+width: 900px;
+    height:730px ;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+     padding-top: 5px;
+     padding-left:45px;
+     padding-right: 45px;
+    display:flex;
+    background-color: #fff;
+    gap: 50px;
+    }
+   #sign{
+    
+    background-color:#fff;
+    flex: 1;
+     padding-top: 30px;
+    padding-right: 55px;
+    margin-right: 40px;
+    padding-left: 50px;
+    justify-content: left;
+    margin-bottom: 50px;
+    
+    
+    
+}
+#left-hand{
+    flex: 1;
+    
+    margin-left: auto;
+    background: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511')center/cover no-repeat;
+    padding-top:0px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 12px;
+    
+}
+#overlay{
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+
+
+
+#btn1,#btn2{
+    border:none;
+    background-color: aliceblue;
+    color: #4d9292;
+    padding: 10px 24px;
+    border-radius: 14px;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all 0.3s;
+}
+#btn1,#btn2:hover{
+background-color: #008080;
+color: aliceblue;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 270px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.94) ;
+    border-color:rgb(199, 186, 186) ;
+    border-style:solid ;
+}
+.signup{
+             width: 250px;
+            height: 40px;
+             border-radius: 18px;
+            margin-left: 22px;
+            background-color: darkblue;
+            color: white;   
+            border:none;
+            font-size: 15px;
+            margin-top: 35px  
+
+}
+#google{
+    width: 270px;
+            height: 35px;
+         border-radius: 18px;
+            margin-left: 22px;
+            background-color:black;
+            color: white;   
+            border:none;
+            font-size: 15px;
+            margin-top: 35px;
+             display: flex;
+            padding-top: 5px;
+            text-align: center;
+            padding-left: -15px;
+            padding-right: 25px;
+            justify-content: center;
+            gap: 8px;
+            align-items: center;
+            cursor: pointer;
+
+
+}
+#facebook{
+    width: 270px;
+            height: 35px;
+         border-radius: 18px;
+            margin-left: 22px;
+            background-color: darkblue;
+            color: white;   
+            border:none;
+            font-size: 15px;
+            margin-top: 35px;
+            text-align: center;
+            padding-right: -15px;
+            justify-content: center;
+            padding-bottom: 1px;
+            padding-top: 6px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            cursor: pointer;
+        
+            
+
+}
+#login-link{
+    
+    text-decoration: underline;
+
+
+}
+#account{
+    padding-left: 37px;
+}
+#terms{
+    color: blue;
+    
+    text-decoration: none;
+    font-size: medium;
+
+
+    
+
+}
+#image1{
+height: 25px;
+    padding-left:10px ;
+    padding-bottom: 4px;
+
+}
+    
+
+
+#image2{
+    height: 25px;
+    padding-left:10px ;
+    padding-bottom: 4px;
+}
+.icon1{
+    padding-left: 10px;
+    
+}
+
+
+
+
+
+
+    
+
+
+</style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="left-hand">
+            <div id="overlay">
+              <p>  Away from home,<br> But feels like home</p>
+            </div> 
+        </div>
+
+    <div id="right-hand">
+    <form action="#" method="post">
+        <div id="left-hand">
+            
+            </div>
+        
+            
+            <div id="right-hand">
+                <img src="OBJECTS/account_circle_50dp_E3E3E3.png" alt="icon"><br>
+        <button id="btn1">Guest</button>
+        <button id="btn2">Business</button><br><br>    
+        <div id="input1">
+        <input type="text" name="username" placeholder="Enter your username" required><br><br>
+        </div>
+        <div id="input2">
+        <input type="email" name="email" placeholder="Enter your email" required><br><br>
+        </div>
+        <div id="input3">
+        <input type="password" name="password" placeholder="Enter your password" required><br><br>
+        </div>
+        <div id="input4">
+        <input type="password" name="confirm_password" placeholder="Confirm your password" required><br><br>
+        <div>
+        <label for="checkbox">
+            <input type="checkbox" id="terms" name="terms" required>
+            I agree to the <a href="terms.html" id="terms">Terms and Conditions</a>
+        </label> <br><br>   
+        </div>
+        <button type="submit" class="signup">Sign Up</button><br><br>
+            <div id="account">
+        <p  >Already have an account?  
+            <a href="regisstration.html" id="login-link">Login! </a> </p> 
+</div>
+            <div class="social- buttons">
+                <div>
+                <button type="button" id="google">
+                    <div class="icon1">
+                    <img id="image1" src="OBJECTS/google.png" alt="icon">
+                    </div>
+                     Continue with Google</button>
+                     </div>
+                     <div>
+                <button type="button" id="facebook">
+                    <div class="icon2">
+                    <img id="image2" src="OBJECTS/facebook.png" alt="icon">
+                    </div>
+                    Sign up with Facebook</button>
+                     </div>
+            </div>
+            </div>
+
+    </form>
+
+
+
+    </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
